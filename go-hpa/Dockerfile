@@ -3,8 +3,8 @@ RUN apk add bash
 
 ADD ./main.go /go/src
 WORKDIR /go/src
-#RUN go build main.go
+RUN go build main.go
 
 
-# ENTRYPOINT [ "/go/src/main" ]
-# EXPOSE 8000
+ENTRYPOINT [ "/go/src/main" ]
+EXPOSE 8000
