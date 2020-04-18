@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: go-hpa
-        image: rodrigotc94/go-hpa
+        image: img-app-Deployment
         ports:
         - containerPort: 80
 
